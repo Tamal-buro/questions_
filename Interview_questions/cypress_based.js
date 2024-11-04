@@ -10,15 +10,14 @@ it("test one", function() {
     Peter
 */
 
-
-
-it("test two”, function() {
-    console.log(“John”);
-    cy.wrap(‘Peter’).then(name => {
-        console.log(name);
+it("test two", function(){
+    console.log('John');
+    cy.wrap('Peter').then(name =>{
+        console.log(name)
     })
-    console.log(‘Automation’);
+    console.log('Automation')
 })
+
 
 /* 
    John
