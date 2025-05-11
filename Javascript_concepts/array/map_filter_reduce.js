@@ -87,14 +87,14 @@ let names = [];
 for(let i = 0; i < students.length; i++){
     names.push(students[i].name.toUpperCase())
 }
-console.log(names)
+// console.log(names)
 
 // through using map()
 
 const namesMap =  students.map((stu, i, arr)=>{
      return stu.name.toLocaleUpperCase()
 })
-console.log(namesMap)
+// console.log(namesMap)
 
 /* 
    Question 2: Return sutdents which has more than 60 marks
@@ -105,8 +105,15 @@ const marks = students.filter((stu, i, arr) => {
         return stu.marks
     }
 })
+// console.log(marks)
 
-console.log(marks)
+/* Questions: Get students details with marks more than 60 and rollNumber more than 15 */
+const details = students.filter((stu, i , arr) => {
+    // console.log(stu)
+    return stu.marks >= 60 && stu.rollNumber > 15
+})
+
+// console.log('Students details ' , details)
 
 
 /* 
@@ -117,4 +124,33 @@ const sumMarks = students.reduce((acc, curr) =>{
     return acc + curr.marks
 }, 0)
 
-console.log(sumMarks)
+// console.log(sumMarks)
+
+/* 
+   Question: Return names of students with more than 60 marks
+*/
+
+const stuNames = students.filter((stu) => {
+    return stu.marks >= 50 
+}).map((stu) => stu.name)
+
+// console.log(stuNames)
+
+
+/* 
+   Question: Return total marks for students with 
+   marks grater than 60 after 20 marks have been 
+   added to those who scored less than 60
+*/
+
+const updatedMarks = students.map((stu) => {
+    if(stu.marks <= 60) {
+        stu.marks += 20
+    }
+    return stu;
+}).filter((stu) => stu.marks > 60).reduce((acc, curr) => {
+    return acc + curr.marks
+}, 0)
+
+console.log(updatedMarks)
+

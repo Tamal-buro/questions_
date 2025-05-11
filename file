@@ -1,0 +1,77 @@
+🔠 String-Based DSA Questions
+🧠 Easy
+Reverse a string
+Input: "hello" → Output: "olleh"
+
+Check if a string is a palindrome
+Input: "madam" → Output: true
+
+Count vowels and consonants
+Input: "hello" → Output: { vowels: 2, consonants: 3 }
+
+Find the first non-repeating character
+Input: "swiss" → Output: "w"
+
+Check if two strings are anagrams
+Input: "listen", "silent" → Output: true
+
+🧠 Medium
+Longest substring without repeating characters
+Input: "abcabcbb" → Output: "abc"
+
+Group anagrams
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"] → Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+
+String compression
+Input: "aaabbc" → Output: "a3b2c1"
+
+Check if a string is a rotation of another
+Input: "waterbottle", "erbottlewat" → Output: true
+
+Remove all duplicates from a string
+Input: "banana" → Output: "ban"
+
+🔢 Array-Based DSA Questions
+🧠 Easy
+Find the maximum and minimum in an array
+
+Reverse an array
+
+Find the second largest number
+
+Remove duplicates from a sorted/unsorted array
+
+Sum of all elements in the array
+
+🧠 Medium
+Find the missing number in a sequence
+Input: [1, 2, 4, 5] → Output: 3
+
+Move all zeros to the end
+Input: [0, 1, 0, 3, 12] → Output: [1, 3, 12, 0, 0]
+
+Find the longest increasing subarray
+
+Kadane’s Algorithm (maximum subarray sum)
+
+Two sum problem
+Input: [2, 7, 11, 15], target = 9 → Output: [0, 1]
+
+🧠 Advanced (Good for SDET coding rounds)
+Subarray with given sum (Sliding Window)
+
+Rotate an array by K steps
+
+Check for balanced parentheses in a string
+
+Implement strstr() (substring search)
+
+Find common elements in three sorted arrays
+
+📌 SDET-Specific Relevance:
+✅ Strong knowledge of array/string manipulation is essential for automation challenges
+
+✅ Many test data sets are string/array based
+
+✅ Common in API testing, log parsing, and input validation
+
